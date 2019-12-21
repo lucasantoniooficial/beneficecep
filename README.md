@@ -12,9 +12,8 @@ Abra seu controller que irá usar a library e faça os seguintes passo a passo
 
 `use BeneficeCep\LibCep`
 
-`public function cep($cep)` 
-`{`
-		`$dados = new LibCep($cep);`
-		
+`public function cep($cep)
+{
+		$dados = new LibCep($cep);
 		return response()->json($dados->response,200);
-`}`
+}`
