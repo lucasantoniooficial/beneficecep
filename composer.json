@@ -1,0 +1,25 @@
+{
+    "name": "benefice/cep",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Antonio",
+            "email": "suporte@beneficeweb.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BeneficeCep\\CepServiceprovider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "BeneficeCep\\": "src"
+        }
+    }
+}
