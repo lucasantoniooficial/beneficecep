@@ -12,8 +12,16 @@ Abra seu controller que irá usar a library e faça os seguintes passo a passo
 
 `use BeneficeCep\LibCep`
 
-    public function cep($cep)
-	{
-    		$dados = new LibCep($cep);
-    		return response()->json($dados->response,200);
-    }
+`
+ public function cep($cep)
+{
+  $dados = new LibCep($cep);
+  return response()->json($dados->response,200);
+}
+`
+
+#Rota
+
+No arquivo de rota api.php, faça o seguinte
+
+`Route::get('cep/{cep}', 'SeuController@cep');`
