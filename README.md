@@ -20,7 +20,7 @@ Abra seu controller que irá usar a library e faça os seguintes passo a passo
 }
 `
 
-#Rota
+# Rota
 
 No arquivo de rota api.php, faça o seguinte
 
