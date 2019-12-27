@@ -1,5 +1,5 @@
 # BénéficeCep
-Uma library para Laravel trabalhando com API BénéficeCEP, todo acesso a API ainda é beta.
+Uma biblioteca para Laravel trabalhando com API BénéficeCEP, todo acesso a API ainda é beta.
 
 # Instalação
 Digite o comando `composer require benefice/cep`
