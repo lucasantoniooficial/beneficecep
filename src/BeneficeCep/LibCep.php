@@ -17,8 +17,10 @@ class LibCep
             $this->response = Cache::get('cep_'.$cep);
         }else {
             $curl = curl_init();
-            curl_setopt($curl, CURLOPT_URL, "http://cep.beneficeweb.com.br/api/v1/cep/{$cep}");
+            curl_setopt($curl, CURLOPT_URL, "https://cep.beneficeweb.com.br/api/v1/cep/{$cep}");
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt ( $curl , CURLOPT_SSL_VERIFYHOST , false );
+            curl_setopt ( $curl , CURLOPT_SSL_VERIFYPEER , false );
             $dados = curl_exec($curl);
             $error = curl_error($curl);
             curl_close($curl);
